@@ -22,6 +22,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 13px;
+  overflow-x: hidden;
 }
 
 
@@ -106,14 +107,45 @@ body {
     
 }
 
-
 .main{
-    display: grid;
-    width: 340px;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(1fr);
-    margin: 10% auto;
+     display: grid;
+    width:340px;
+    margin: 0 auto;
     row-gap: 1.5rem;
 }
 
 
+
+@media screen and (min-width:1040px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+.main{
+    display: grid;
+    width:1000px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 0 auto;
+    gap: 1.5rem;
+    padding: 3rem 0;
+
+}
+.card-one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.card-two{
+grid-column: 3/4;
+}
+.card-three{
+grid-row: 2/3;
+}
+.card-four{
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+.card-five{
+    grid-row: 1/3;
+}
+}
