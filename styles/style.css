@@ -18,6 +18,7 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--clr-light-gray-blue);
   width: 100vw;
   height: 100vh;
   font-size: 13px;
@@ -27,9 +28,10 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
   padding: 2rem;
-  
+  border-radius: 10px;
 }
 
 .profile-container{
@@ -55,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     font-weight: 500;
-    color: var(--clr-white);
+
 }
 
 .badge{
@@ -66,36 +68,42 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    color: var(--clr-white);
+    line-height: 1.5rem;
 }
-
+.title{
+    font-weight: 600;
+}
 .content{
     opacity: 70%;
+    font-weight: 500;
 }
 .card-one{
     background-color: var(--clr-violet);
-    border-radius: 12px;
+    
+    color: var(--clr-white);
 }
 .card-two{
     background-color: var(--clr-gray-blue);
-    border-radius: 12px;
+   
+    color: var(--clr-white);
 }
 
 .card-three{
     background-color: var(--clr-white);
     color: var(--clr-black-blue);
     box-shadow: 5px 5px 5px var(--clr-black-blue);
-    border-radius: 12px;
+    
 }
 .card-four{
     background-color: var(--clr-black-blue);
-    border-radius: 12px;
+    
+    color: var(--clr-white);
 }
 .card-five{
     background-color: var(--clr-white);
     color: var(--clr-black-blue);
     box-shadow: 2px 2px 5px var(--clr-black-blue);
-    border-radius: 12px;
+    
 }
 
 
@@ -104,5 +112,8 @@ body {
     width: 340px;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(1fr);
-    margin: 0 auto;
+    margin: 10% auto;
+    row-gap: 1.5rem;
 }
+
+
